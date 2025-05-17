@@ -1,0 +1,48 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>DogResponse</display-name>
+
+<welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+</welcome-file-list>
+
+
+
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.dogresponse.servlet.LoginServlet</servlet-class>
+    </servlet>
+    
+
+    <!-- Signup Servlet -->
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>com.dogresponse.servlet.SignupServlet</servlet-class>
+    </servlet>
+    
+    <!-- Search Servlet -->
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.dogresponse.servlet.SearchServlet</servlet-class>
+    </servlet>
+    
+    <!-- Save List Servlet -->
+    <servlet>
+        <servlet-name>SaveListServlet</servlet-name>
+        <servlet-class>com.dogresponse.servlet.SaveListServlet</servlet-class>
+    </servlet>
+    
+
+    <!-- Update List Servlet -->
+    <servlet>
+        <servlet-name>UpdateListServlet</servlet-name>
+        <servlet-class>com.dogresponse.servlet.UpdateListServlet</servlet-class>
+    </servlet>
+    
+</web-app>
